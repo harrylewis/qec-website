@@ -1,0 +1,697 @@
+@import url(http://fonts.googleapis.com/css?family=Raleway:300,400,500,600,700);
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline; }
+
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block; }
+
+body {
+  line-height: 1; }
+
+ol, ul {
+  list-style: none; }
+
+blockquote, q {
+  quotes: none; }
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none; }
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+@font-face {
+  font-family: "materialIcon";
+  src: url("../fonts/icomoon/fonts/icomoon.ttf"), url("../fonts/icomoon/fonts/icomoon.eot"), url("../fonts/icomoon/fonts/icomoon.svg"), url("../fonts/icomoon/fonts/icomoon.woff"); }
+
+@font-face {
+  font-family: "materialIcon2";
+  src: url("../fonts/icomoon2/fonts/icomoon.ttf"), url("../fonts/icomoon2/fonts/icomoon.eot"), url("../fonts/icomoon2/fonts/icomoon.svg"), url("../fonts/icomoon2/fonts/icomoon.woff"); }
+
+.cf:before,
+.cf:after {
+  content: " ";
+  /* 1 */
+  display: table;
+  /* 2 */ }
+
+.cf:after {
+  clear: both;
+  display: block; }
+
+.cf {
+  /* For IE 6/7 only. Include this rule to trigger hasLayout and contain floats. */
+  *zoom: 1; }
+
+* {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box; }
+
+.button {
+  font: 500 1.6em/1.1875em "Raleway";
+  display: block;
+  margin: 0 auto;
+  padding: 0.75em;
+  width: 18.75em;
+  border: 0;
+  background: transparent;
+  border-radius: 2px;
+  text-transform: uppercase;
+  text-decoration-style: none;
+  text-align: center;
+  cursor: pointer;
+  transition: background 			0.2s, color 				0.2s, -webkit-transform 	0.1s, -ms-transform 	0.1s, transform 	0.1s; }
+  .button:hover, .button:link, .button:hover, .button:active {
+    text-decoration: none;
+    cursor: pointer; }
+  .button:active {
+    -webkit-transform: scale(0.975, 0.975);
+    -ms-transform: scale(0.975, 0.975);
+    transform: scale(0.975, 0.975); }
+
+.button--white {
+  border: 1px solid white;
+  color: white; }
+  .button--white:visited {
+    color: white; }
+  .button--white:hover {
+    background: white;
+    color: #39c2de; }
+
+.button--blue {
+  border: 1px solid #39c2de;
+  color: #39c2de; }
+  .button--blue:visited {
+    color: #39c2de; }
+  .button--blue:hover {
+    background: #39c2de;
+    color: white; }
+
+.button--fade {
+  border: 1px solid #c8c8c8;
+  color: #c8c8c8;
+  margin-bottom: 60px; }
+  .button--fade:visited {
+    color: #c8c8c8; }
+  .button--fade:hover {
+    background: #c8c8c8;
+    color: white; }
+
+.button--margin {
+  margin-bottom: 60px; }
+
+.button--contact {
+  font-weight: 600;
+  background: white;
+  border-radius: 2em;
+  padding: 1em;
+  color: #39c2de; }
+
+.button--social {
+  margin: 1em auto;
+  border: 1px solid #2a6874;
+  color: #2a6874; }
+  .button--social:visited {
+    color: #2a6874; }
+  .button--social:hover {
+    background: #2a6874;
+    color: white; }
+
+body {
+  font-size: 62.5%;
+  background: whitesmoke; }
+
+.lightblue {
+  background: #f8fbfd; }
+
+hr {
+  margin: 0; }
+
+.header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 500;
+  background: #fafafa;
+  box-shadow: 0px 1px 0px rgba(0, 0, 0, 0.1); }
+
+.navigation__container {
+  max-width: 110em;
+  margin: 0 auto; }
+
+.navigation {
+  width: 100%; }
+
+.navigation__link__container {
+  float: right; }
+
+.navigation__link__container--left {
+  float: left; }
+
+.navigation__link {
+  font: 700 1.2em "Raleway";
+  color: #646464;
+  display: block;
+  padding: 2em 1.5em;
+  text-transform: uppercase;
+  cursor: pointer;
+  text-decoration: none;
+  transition: background 0.1s; }
+  .navigation__link:hover {
+    cursor: pointer;
+    text-decoration: none;
+    color: #646464;
+    background: #f0f0f0; }
+  .navigation__link:visited {
+    text-decoration: none;
+    color: #646464; }
+
+.navigation__link__logo {
+  padding: 0.6em; }
+
+.navigation__link--active {
+  background: #e6e6e6; }
+
+.navigation__logo {
+  display: inline-block;
+  widht: 4em;
+  height: 4em;
+  vertical-align: middle;
+  margin-right: 0.5em; }
+
+.container--content {
+  padding: 6em 0; }
+
+.row--flex {
+  display: -webkit-flex;
+  display: flex;
+  -webkit-flex-direction: rpw;
+  flex-direction: row;
+  -webkit-align-items: center;
+  align-items: center;
+  -webkit-justify-content: center;
+  justify-content: center; }
+
+.row--top-30 {
+  margin-top: 3em; }
+
+.row--masthead {
+  padding: 18em 0 6em 0; }
+
+.row--row--masthead {
+  padding: 16em 0 10em 0; }
+
+.row--full-col {
+  display: table; }
+
+.row--secondary {
+  margin-top: 5em; }
+
+.row--white {
+  background: white;
+  border-top: 1px solid rgba(0, 0, 0, 0.1); }
+
+.row--subscribe {
+  padding: 2em 0; }
+
+.row--comp-coord {
+  border-top: 1px solid #d9d9d9;
+  border-bottom: 1px solid #d9d9d9;
+  background: #ebebeb; }
+
+.col-md-4--full-col {
+  display: table-cell;
+  vertical-align: top;
+  float: none; }
+
+.col-md-6--full-col {
+  display: table-cell;
+  vertical-align: top;
+  float: none; }
+
+.divider {
+  border: 1px solid rgba(200, 200, 200, 0.25); }
+
+.masthead .masthead__icon {
+  display: block;
+  font: 100 2.8em "materialIcon";
+  color: rgba(255, 255, 255, 0.5);
+  text-align: center;
+  margin-bottom: 0.714285714em; }
+.masthead .masthead__catch {
+  font: 700 2.6em/30px "Raleway";
+  margin-bottom: 10px;
+  color: white;
+  text-align: center;
+  text-transform: uppercase; }
+.masthead .masthead__catch--sub {
+  font: 500 2.6em/30px "Raleway";
+  color: #373737;
+  text-align: center;
+  margin-bottom: 10px;
+  text-transform: uppercase; }
+.masthead .masthead__catch--sub--sub {
+  font: 400 2em/30px "Raleway";
+  color: #373737;
+  text-align: center;
+  margin-bottom: 10px;
+  text-transform: uppercase; }
+.masthead .masthead__description {
+  font: 400 2em/1.4em "Raleway";
+  margin: 0 auto;
+  max-width: 800px;
+  color: white;
+  text-align: center; }
+.masthead .masthead__description--sub {
+  font: 400 1.8em/24px "Raleway";
+  margin: 0 auto;
+  max-width: 600px;
+  color: #646464;
+  text-align: center;
+  margin-bottom: 30px; }
+.masthead .masthead__helper {
+  border-top: 1px solid rgba(255, 255, 255, 0.25);
+  padding-top: 3em; }
+  .masthead .masthead__helper .masthead__helper__logo {
+    display: inline-block;
+    width: 20em;
+    margin-top: 1em; }
+  .masthead .masthead__helper .masthead__helper__text {
+    font: 400 2em/28px "Raleway";
+    color: white; }
+
+.masthead__qec-logo {
+  display: inline-block;
+  height: 5em;
+  width: 5em;
+  background: url("../images/logo/qec.offwhite.png") center center/100% no-repeat; }
+
+.iceberg {
+  background: #39c2de; }
+
+.lunar-trees {
+  background: url("../images/backgrounds/lunar.trees.jpg") center center/100% no-repeat; }
+
+.community-housing {
+  background: url("../images/backgrounds/community.housing.jpg") center center/100% no-repeat; }
+
+.canoeing {
+  background: url("../images/backgrounds/canoeing.jpg") center center/100% no-repeat; }
+
+.entrepreneur-hallway {
+  background: url("../images/backgrounds/entrepreneur.hallway.jpg") center center/100% no-repeat;
+  background: #39c2de; }
+
+.competitors {
+  background: url("../images/backgrounds/radial.fade.png") center center/100% no-repeat; }
+
+.accolades {
+  background: #f8f8f8;
+  border-top: 1px solid #e0e0e0;
+  border-bottom: 1px solid #e0e0e0; }
+
+.accolade {
+  padding: 5em 2.5em;
+  border-right: 1px solid #e0e0e0; }
+  .accolade:last-child {
+    border-right: 0; }
+  .accolade .accolade__logo__container {
+    display: block;
+    width: 100%;
+    height: 8em;
+    margin: 0 auto;
+    margin-bottom: 2.5em;
+    text-align: center; }
+    .accolade .accolade__logo__container .accolade__logo__helper {
+      display: inline-block;
+      height: 100%;
+      vertical-align: middle; }
+    .accolade .accolade__logo__container .accolade__logo {
+      display: inline-block;
+      margin: 0 auto;
+      vertical-align: middle;
+      max-height: 100%; }
+  .accolade .accolade__name {
+    font: 500 1.2em "Raleway";
+    color: #969696;
+    text-align: center;
+    text-transform: uppercase;
+    margin-bottom: 0.833333333em; }
+  .accolade .accolade__quote {
+    font: 400 1.6em/24px "Raleway";
+    color: #7c7c7c;
+    text-align: center; }
+
+.subscribe {
+  background: #373b3f; }
+
+.sub__heading {
+  font: 500 2.4em "Raleway";
+  color: white;
+  text-align: center;
+  margin-bottom: 0.83333333em; }
+
+.button-link {
+  display: block;
+  width: intrinsic;
+  padding: 1.2em;
+  border-radius: 4px;
+  margin: 0 auto;
+  text-transform: uppercase;
+  cursor: pointer; }
+  .button-link * {
+    cursor: pointer; }
+  .button-link:hover, .button-link:active {
+    text-decoration: none;
+    cursor: pointer; }
+  .button-link .button-link__icon {
+    float: left;
+    font: 100 3.4em "materialIcon";
+    margin-right: 0.33333333em;
+    color: #707c1d; }
+  .button-link.button-link--float {
+    margin: 0;
+    margin-right: 2em;
+    float: left; }
+  .button-link .button-link__float-helper {
+    float: left; }
+  .button-link .button-link__text {
+    font: 500 1.4em/18px "Raleway"; }
+  .button-link .button-link__text--white {
+    color: white; }
+  .button-link .button-link__text--blue {
+    color: #39c2de; }
+  .button-link .button-link__text--primary {
+    text-align: left; }
+  .button-link .button-link__text--secondary {
+    font: 500 1.2em/18px "Raleway";
+    text-align: left;
+    color: rgba(255, 255, 255, 0.9); }
+
+.button-link--large {
+  padding: 2em 3em; }
+
+.button-link--green {
+  background: #c4d934; }
+
+.button-link--white {
+  background: white; }
+
+.button-link--blue {
+  background: #39c2de; }
+
+.button-link--blue--fb {
+  background: #425f9c; }
+
+.button-link--blue--twitter {
+  background: #55acee; }
+
+.button-link--blue--sponsor {
+  background: #93a6b9; }
+
+.community {
+  background: #39c2de; }
+
+.section-text {
+  font: 500 1.4em/18px "Raleway"; }
+
+.section-text--center {
+  text-align: center;
+  max-width: 660px;
+  margin: 0 auto;
+  margin-bottom: 2.857142857em; }
+
+.section-text--white {
+  color: white; }
+
+.section-text--blue {
+  color: #93a6b9; }
+
+.community > .row {
+  background: url("../images/patterns/community.background.svg") center center repeat-x, no-repeat; }
+
+.sponsors {
+  display: block;
+  margin: 0 auto;
+  width: 50em;
+  margin-bottom: 3em; }
+
+.content .content__heading {
+  font: 500 2em/1.5em "Raleway";
+  color: #373737;
+  margin-bottom: 1.5em;
+  text-align: center; }
+.content .content__heading--sub {
+  font: 500 2.2em/26px "Raleway";
+  color: #373737;
+  margin-bottom: 10px;
+  text-align: center;
+  text-transform: uppercase; }
+.content .content__heading--no-margin {
+  margin-bottom: 0;
+  text-align: center; }
+.content .content__bullet {
+  font: 500 1.2em/18px "Raleway";
+  color: #8c8c8c;
+  margin-bottom: 0.83333333em; }
+.content .content__bullet--sub {
+  font: 400 1.8em/24px "Raleway";
+  color: #646464;
+  text-align: center; }
+
+.poc {
+  display: block;
+  margin: 0 auto; }
+  .poc .poc__avatar {
+    display: block;
+    margin: 0 auto;
+    height: 6em;
+    width: 6em;
+    border: 2px solid rgba(170, 170, 170, 0.5);
+    border-radius: 3em;
+    margin-bottom: 1em; }
+  .poc .poc__name {
+    text-align: center;
+    font: 500 1.2em/15px "Raleway";
+    text-transform: uppercase;
+    color: #8c8c8c; }
+  .poc .poc__position, .poc .poc__number, .poc .poc__email {
+    display: block;
+    text-align: center;
+    font: 500 1.1em/15px "Raleway";
+    text-transform: uppercase;
+    color: #b4b4b4; }
+  .poc .poc__number, .poc .poc__email {
+    font-size: 1.2em; }
+
+.graphic--business-pitch {
+  display: block;
+  margin: 6em auto; }
+
+.sponsor-link {
+  font: 700 2em/6.4em "Raleway";
+  display: block;
+  height: 6.4em;
+  width: 100%;
+  color: #93a6b9;
+  text-align: center;
+  text-transform: uppercase; }
+  .sponsor-link:hover, .sponsor-link:link, .sponsor-link:hover, .sponsor-link:active {
+    text-decoration: none;
+    cursor: pointer; }
+
+.sponsor-link--blue {
+  color: #39c2de; }
+
+.loyalty-one {
+  background: url("../images/logos/lologo.png") center center no-repeat; }
+
+.toronto-entrepreneurs {
+  background: url("../images/logos/telogo.png") center center no-repeat; }
+
+.experience-point {
+  background: url("../images/logos/eplogo.png") center center no-repeat; }
+
+.queens-school-business {
+  background: url("../images/logos/qsblogo.png") center center no-repeat; }
+
+.jackson-triggs {
+  background: url("../images/logos/jtlogo.png") center center no-repeat; }
+
+.queens-mba {
+  background: url("../images/logos/qmbalogo.png") center center no-repeat; }
+
+.accelerator-center {
+  background: url("../images/logos/aclogo.png") center center no-repeat; }
+
+.subscribe__text {
+  font: 400 1.6em/22px "Raleway";
+  color: #373737; }
+  .subscribe__text b {
+    font-weight: 600; }
+
+.contact {
+  background: url("../images/backgrounds/contact.world.jpg") center center/100% no-repeat;
+  padding: 10em 0; }
+
+.contact__header {
+  font: 700 1.8em/21px "Raleway";
+  color: white;
+  text-align: center;
+  margin-top: 1.666667em;
+  margin-bottom: 0.5555555em;
+  text-transform: uppercase; }
+
+.contact__description {
+  font: 500 1.6em/18px "Raleway";
+  color: white;
+  text-align: center; }
+
+.video {
+  display: block;
+  background: #373737;
+  border-radius: 4px;
+  margin: 3em auto;
+  width: 75em;
+  height: 45em;
+  box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.2); }
+
+.indicator {
+  font: 700 1.4em/16px "Raleway";
+  color: #39c2de;
+  border: 1px solid red;
+  display: block;
+  padding: 1.2em;
+  margin: 100px auto;
+  margin-top: 150px;
+  border-radius: 2em;
+  border: 1px solid #39c2de;
+  background: #39c2de;
+  color: white;
+  width: intrinsic;
+  text-transform: uppercase;
+  cursor: pointer; }
+  .indicator:hover, .indicator:link, .indicator:hover, .indicator:active {
+    text-decoration: none;
+    cursor: pointer; }
+  .indicator:hover {
+    color: white; }
+
+.competitor-awards {
+  display: block;
+  margin: 0 auto;
+  max-width: 520px;
+  width: 80%;
+  margin-bottom: 5em; }
+
+.comp-coordinator {
+  display: block;
+  padding: 4em; }
+
+.comp-coordinator__avatar {
+  border-radius: 5em;
+  display: block;
+  margin: 0 auto;
+  width: 6em;
+  margin-bottom: 1em; }
+
+.comp-coordinator__name {
+  text-align: center;
+  font: 600 1.4em/16px "Raleway";
+  color: #14434d;
+  text-transform: uppercase;
+  margin-bottom: 2px; }
+
+.comp-coordinator__region {
+  text-align: center;
+  font: 700 1.2em/14px "Raleway";
+  color: #14434d;
+  text-transform: uppercase; }
+
+.comp-coordinator__icon {
+  display: block;
+  width: 100%;
+  text-align: center;
+  font: 400 3em "materialIcon2";
+  color: #d9d9d9;
+  margin-top: 1em; }
+
+.rounds {
+  padding: 6em 4em;
+  width: 50%; }
+
+.round-one {
+  background: #39c2de; }
+
+.round-two {
+  background: #c3d246; }
+
+.round__header {
+  font: 700 2.2em/26px "Raleway";
+  color: white;
+  text-align: center;
+  margin-bottom: 10px;
+  text-transform: uppercase; }
+
+.round__description {
+  font: 400 1.8em/24px "Raleway";
+  color: white;
+  text-align: center; }
+
+.round__graphic {
+  display: block;
+  margin: 0 auto; }
+
+@media (max-width: 992px) {
+  .col-md-4--full-col, .col-md-6--full-col {
+    vertical-align: auto;
+    display: block; }
+
+  .navigation__link__container {
+    width: 100%; }
+    .navigation__link__container:not(.navigation__link__container--current) {
+      display: none; }
+    .navigation__link__container.navigation__link__container--is-visible {
+      display: block; }
+
+  .navigation__link {
+    text-align: center; }
+
+  .accolade {
+    border-right: 0;
+    border-bottom: 1px solid #e0e0e0; }
+    .accolade:last-child {
+      border-bottom: 0; }
+
+  .video {
+    width: 100%; }
+
+  iframe {
+    width: 100%; }
+
+  .contact {
+    background: url("../images/backgrounds/contact.world.jpg") center center/1024px no-repeat;
+    padding: 10em 0; } }

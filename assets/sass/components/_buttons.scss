@@ -1,0 +1,117 @@
+// BUTTONS
+// -------
+
+.button {
+	font: $medium 1.6em/1.1875em "Raleway";
+	display: block;
+	margin: 0 auto;
+	padding: 0.75em;
+	width: 18.75em;
+	border: 0;
+	background: transparent;
+	border-radius: 2px;
+	text-transform: uppercase;
+	text-decoration-style: none;
+	text-align: center;
+	cursor: pointer;
+
+	// animations
+	transition:
+		background 			0.2s,
+		color 				0.2s,
+		-webkit-transform 	0.1s,
+			-ms-transform 	0.1s,
+				transform 	0.1s;
+
+	&:hover, &:link, &:hover, &:active {
+		text-decoration: none;
+		cursor: pointer;
+	}
+
+
+	&:active {
+		-webkit-transform: scale(0.975,0.975);
+			-ms-transform: scale(0.975,0.975);
+				transform: scale(0.975,0.975);
+	}
+
+}
+
+
+.button--white {
+	border: 1px solid rgb(255,255,255);
+	color: rgb(255,255,255);
+
+	&:visited {
+		color: rgb(255,255,255);
+	}
+
+	&:hover {
+		background: rgb(255,255,255);
+		color: rgb(57,194,222);
+	}
+
+}
+
+
+.button--blue {
+	border: 1px solid rgb(57,194,222);
+	color: rgb(57,194,222);
+
+	&:visited {
+		color: rgb(57,194,222);
+	}
+
+	&:hover {
+		background: rgb(57,194,222);
+		color: rgb(255,255,255);
+	}
+
+}
+
+
+.button--fade {
+	border: 1px solid rgb(200,200,200);
+	color: rgb(200,200,200);
+
+	&:visited {
+		color: rgb(200,200,200);
+	}
+
+	&:hover {
+		background: rgb(200,200,200);
+		color: rgb(255,255,255);
+	}
+
+	margin-bottom: 60px;
+}
+
+
+.button--margin {
+	margin-bottom: 60px;
+}
+
+
+.button--contact {
+	font-weight: $semibold;
+	background: rgb(255,255,255);
+	border-radius: 2em;
+	padding: 1em;
+	color: rgb(57,194,222);
+}
+
+
+.button--social {
+	margin: 1em auto;
+	border: 1px solid rgb(42,104,116);
+	color: rgb(42,104,116);
+
+	&:visited {
+		color: rgb(42,104,116);
+	}
+
+	&:hover {
+		background: rgb(42,104,116);
+		color: rgb(255,255,255);
+	}
+}

@@ -1,0 +1,62 @@
+// BOOTSTRAP FIXES
+// ---------------
+
+@media (max-width: 992px) {
+
+
+	.col-md-4--full-col, .col-md-6--full-col {
+		vertical-align: auto;
+		display: block;
+	}
+
+
+	.navigation__link__container {
+		width: 100%;
+
+		&:not(.navigation__link__container--current) {
+			display: none;
+		}
+
+
+		&.navigation__link__container--is-visible {
+			display: block;
+		}
+
+	}
+
+
+		.navigation__link {
+			text-align: center;
+		}
+
+
+
+
+
+
+	.accolade {
+		border-right: 0;
+		border-bottom: 1px solid rgb(224,224,224);
+
+		&:last-child {
+			border-bottom: 0;
+		}
+	}
+
+
+	.video {
+		width: 100%;
+	}
+
+	iframe {
+		width: 100%;
+	}
+
+
+	.contact {
+		background: url("../images/backgrounds/contact.world.jpg") center center / 1024px no-repeat;
+		padding: 10em 0;
+	}
+
+
+}

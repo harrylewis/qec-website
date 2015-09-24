@@ -1,0 +1,32 @@
+// TYPOGRAPHY RULES
+// ----------------
+
+// FONTS
+// -----
+
+@import url(http://fonts.googleapis.com/css?family=Raleway:300,400,500,600,700);
+
+@font-face {
+	font-family: "materialIcon";
+	src: url('../fonts/icomoon/fonts/icomoon.ttf'),
+		 url('../fonts/icomoon/fonts/icomoon.eot'),
+		 url('../fonts/icomoon/fonts/icomoon.svg'),
+		 url('../fonts/icomoon/fonts/icomoon.woff');
+}
+
+@font-face {
+	font-family: "materialIcon2";
+	src: url('../fonts/icomoon2/fonts/icomoon.ttf'),
+		 url('../fonts/icomoon2/fonts/icomoon.eot'),
+		 url('../fonts/icomoon2/fonts/icomoon.svg'),
+		 url('../fonts/icomoon2/fonts/icomoon.woff');
+}
+
+// FONT WEIGHTS
+// ------------
+
+$light 		: 300;
+$regular 	: 400;
+$medium 	: 500;
+$semibold 	: 600;
+$bold 		: 700;
