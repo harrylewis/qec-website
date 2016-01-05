@@ -149,51 +149,67 @@ body {
 hr {
   margin: 0; }
 
-.header {
+.main-nav {
   position: fixed;
   top: 0;
   left: 0;
   width: 100%;
   z-index: 500;
-  background: #fafafa;
+  background: white;
   box-shadow: 0px 1px 0px rgba(0, 0, 0, 0.1); }
 
-.navigation__container {
-  max-width: 110em;
+.main-nav__container {
+  max-width: 120em;
   margin: 0 auto; }
 
-.navigation {
+.main-nav__links {
   width: 100%; }
 
-.navigation__link__container {
+.main-nav__link__container {
   float: right; }
 
 .navigation__link__container--left {
   float: left; }
 
-.navigation__link {
+.main-nav__link {
   font: 700 1.2em "Raleway";
-  color: #646464;
   display: block;
   padding: 2em 1.5em;
   text-transform: uppercase;
   cursor: pointer;
   text-decoration: none;
-  transition: background 0.1s; }
-  .navigation__link:hover {
-    cursor: pointer;
+  color: #646464;
+  -webkit-transition: background 0.25s;
+  -moz-transition: background 0.25s;
+  -o-transition: background 0.25s;
+  transition: background 0.25s; }
+  .main-nav__link:hover {
+    cursor: inherit;
     text-decoration: none;
-    color: #646464;
-    background: #f0f0f0; }
-  .navigation__link:visited {
+    background: #f0f0f0;
+    color: #646464; }
+    .main-nav__link:hover.main-nav__link--active {
+      background: rgba(57, 194, 222, 0.85);
+      color: white; }
+  .main-nav__link:visited {
     text-decoration: none;
     color: #646464; }
+    .main-nav__link:visited.main-nav__link--active {
+      color: white; }
+  .main-nav__link:link {
+    cursor: inherit;
+    text-decoration: none; }
+  .main-nav__link:active {
+    cursor: inherit;
+    text-decoration: none;
+    background: #e1e1e1; }
 
 .navigation__link__logo {
   padding: 0.6em; }
 
-.navigation__link--active {
-  background: #e6e6e6; }
+.main-nav__link--active {
+  background: rgba(57, 194, 222, 0.85);
+  color: white; }
 
 .navigation__logo {
   display: inline-block;
@@ -218,8 +234,11 @@ hr {
 .row--top-30 {
   margin-top: 3em; }
 
+.row--top-40 {
+  margin-top: 5em; }
+
 .row--masthead {
-  padding: 18em 0 6em 0; }
+  padding: 12em 0 12em 0; }
 
 .row--row--masthead {
   padding: 16em 0 10em 0; }
@@ -257,16 +276,23 @@ hr {
 
 .masthead .masthead__icon {
   display: block;
-  font: 100 2.8em "materialIcon";
+  margin: 0 auto;
+  width: 2em;
+  height: 2em;
+  font: 100 2em/1.5em "materialIcon";
   color: rgba(255, 255, 255, 0.5);
+  color: #39c2de;
   text-align: center;
-  margin-bottom: 0.714285714em; }
+  margin-bottom: 0.714285714em;
+  border: 4px solid #39c2de;
+  border-radius: 1.5em; }
 .masthead .masthead__catch {
-  font: 700 2.6em/30px "Raleway";
-  margin-bottom: 10px;
+  font: 700 1.6em/30px "Raleway";
   color: white;
   text-align: center;
   text-transform: uppercase; }
+.masthead .masthead__catch--dark {
+  color: rgba(160, 170, 190, 0.75); }
 .masthead .masthead__catch--sub {
   font: 500 2.6em/30px "Raleway";
   color: #373737;
@@ -280,11 +306,13 @@ hr {
   margin-bottom: 10px;
   text-transform: uppercase; }
 .masthead .masthead__description {
-  font: 400 2em/1.4em "Raleway";
+  font: 400 2.6em/1.4em "Raleway";
   margin: 0 auto;
   max-width: 800px;
   color: white;
   text-align: center; }
+.masthead .masthead__description--dark {
+  color: #3c465a; }
 .masthead .masthead__description--sub {
   font: 400 1.8em/24px "Raleway";
   margin: 0 auto;
@@ -311,9 +339,6 @@ hr {
 
 .iceberg {
   background: #39c2de; }
-
-.lunar-trees {
-  background: url("../images/backgrounds/lunar.trees.jpg") center center/100% no-repeat; }
 
 .community-housing {
   background: url("../images/backgrounds/community.housing.jpg") center center/100% no-repeat; }
@@ -665,19 +690,145 @@ hr {
   display: block;
   margin: 0 auto; }
 
+.partner {
+  min-width: 8em;
+  border-radius: 4px;
+  width: 75%;
+  margin: 2em auto; }
+
+.partner__logo {
+  padding: 4em 0; }
+
+.partner__image {
+  width: 90%;
+  display: block;
+  margin: 0 auto; }
+
+.partner__header,
+.partner__footer {
+  font: 500 1.4em "Raleway";
+  text-transform: uppercase;
+  text-align: center;
+  padding: 0.5em; }
+
+.partner--platinum {
+  border: 3px solid #E5E4E2; }
+  .partner--platinum .partner__header,
+  .partner--platinum .partner__footer {
+    background: #E5E4E2;
+    color: #646e82; }
+
+.partner--gold {
+  border: 3px solid #FFD700; }
+  .partner--gold .partner__header,
+  .partner--gold .partner__footer {
+    background: #FFD700;
+    color: #646e82; }
+
+.partner--silver {
+  border: 3px solid #C0C0C0; }
+  .partner--silver .partner__header,
+  .partner--silver .partner__footer {
+    background: #C0C0C0;
+    color: #646e82; }
+
+.partner--fund-through {
+  border: 3px solid #61c5bc; }
+  .partner--fund-through .partner__header,
+  .partner--fund-through .partner__footer {
+    background: #61c5bc;
+    color: white; }
+
+.partner--weirfoulds {
+  border: 3px solid #01718f; }
+  .partner--weirfoulds .partner__header,
+  .partner--weirfoulds .partner__footer {
+    background: #01718f;
+    color: white; }
+
+.partner--toronto {
+  border: 3px solid #295a84; }
+  .partner--toronto .partner__header,
+  .partner--toronto .partner__footer {
+    background: #295a84;
+    color: white; }
+
+.partner--redbull {
+  border: 3px solid #d92149; }
+  .partner--redbull .partner__header,
+  .partner--redbull .partner__footer {
+    background: #d92149;
+    color: white; }
+
+.partner--ryerson {
+  border: 3px solid black; }
+  .partner--ryerson .partner__header,
+  .partner--ryerson .partner__footer {
+    background: black;
+    color: white; }
+
+.partner--founder {
+  border: 3px solid black; }
+  .partner--founder .partner__header,
+  .partner--founder .partner__footer {
+    background: black;
+    color: white; }
+
+.partner--constellation {
+  border: 3px solid #0166ab; }
+  .partner--constellation .partner__header,
+  .partner--constellation .partner__footer {
+    background: #0166ab;
+    color: white; }
+
+.partner--invision {
+  border: 3px solid #fc3768; }
+  .partner--invision .partner__header,
+  .partner--invision .partner__footer {
+    background: #fc3768;
+    color: white; }
+
+.partner--dentons {
+  border: 3px solid #712c91; }
+  .partner--dentons .partner__header,
+  .partner--dentons .partner__footer {
+    background: #712c91;
+    color: white; }
+
+.partner--covintus {
+  border: 3px solid #1d4288; }
+  .partner--covintus .partner__header,
+  .partner--covintus .partner__footer {
+    background: #1d4288;
+    color: white; }
+
+.partner--awake {
+  border: 3px solid #febd10; }
+  .partner--awake .partner__header,
+  .partner--awake .partner__footer {
+    background: #febd10;
+    color: white; }
+
+.partner--bank {
+  border: 3px solid #c9992b; }
+  .partner--bank .partner__header,
+  .partner--bank .partner__footer {
+    background: #c9992b;
+    color: white; }
+
 @media (max-width: 992px) {
   .col-md-4--full-col, .col-md-6--full-col {
     vertical-align: auto;
     display: block; }
 
-  .navigation__link__container {
+  .main-nav__link__container {
     width: 100%; }
-    .navigation__link__container:not(.navigation__link__container--current) {
+    .main-nav__link__container:not(.navigation__link__container--current) {
       display: none; }
-    .navigation__link__container.navigation__link__container--is-visible {
+    .main-nav__link__container.navigation__link__container--is-visible {
       display: block; }
 
-  .navigation__link {
+  .main-nav__link {
     text-align: center; }
 
   .accolade {

@@ -1,7 +1,7 @@
 $(function() {
 
 	// mobile nav
-	var $navItem = $('.navigation__link__container');
+	var $navItem = $('.main-nav__link__container');
 
 	// add click handler
 	$navItem.click(function(e) {

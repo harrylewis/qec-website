@@ -1,2 +1,104 @@
 // NAVIGATION
 // ----------
+
+.main-nav {
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	z-index: 500;
+	background: rgb(255,255,255);
+	box-shadow: 0px 1px 0px rgba(0,0,0,0.1);
+}
+
+
+	.main-nav__container {
+		max-width: 120em;
+		margin: 0 auto;
+	}
+
+
+		.main-nav__links {
+			width: 100%;
+		}
+
+
+			.main-nav__link__container {
+				float: right;
+			}
+
+
+			.navigation__link__container--left {
+				float: left;
+			}
+
+
+				.main-nav__link {
+					font: $bold 1.2em "Raleway";
+					display: block;
+					padding: 2em 1.5em;
+					text-transform: uppercase;
+					cursor: pointer;
+					text-decoration: none;
+					color: rgb(100,100,100);
+					// transition fallback
+					-webkit-transition: background 0.25s;
+				   	   -moz-transition: background 0.25s;
+						 -o-transition: background 0.25s;
+							transition: background 0.25s;
+
+					&:hover {
+						cursor: inherit;
+						text-decoration: none;
+						background: rgb(240,240,240);
+						color: rgb(100,100,100);
+
+						&.main-nav__link--active {
+							background: rgba(57,194,222,0.85);
+							color: rgb(255,255,255);
+						}
+
+					}
+
+					&:visited {
+						text-decoration: none;
+						color: rgb(100,100,100);
+
+						&.main-nav__link--active {
+							color: rgb(255,255,255);
+						}
+
+					}
+
+					&:link {
+						cursor: inherit;
+						text-decoration: none;
+					}
+
+					&:active {
+						cursor: inherit;
+						text-decoration: none;
+						background: rgb(225,225,225);
+					}
+
+				}
+
+
+				.navigation__link__logo {
+					padding: 0.6em;
+				}
+
+
+				.main-nav__link--active {
+					background: rgba(57,194,222,0.85);
+					color: rgb(255,255,255);
+				}
+
+
+				.navigation__logo {
+					display: inline-block;
+					widht: 4em;
+					height: 4em;
+					vertical-align: middle;
+					margin-right: 0.5em;
+				}
