@@ -694,7 +694,8 @@ hr {
   min-width: 8em;
   border-radius: 4px;
   width: 75%;
-  margin: 2em auto; }
+  margin: 2em auto;
+  background: white; }
 
 .partner__logo {
   padding: 4em 0; }
@@ -814,6 +815,20 @@ hr {
   .partner--bank .partner__header,
   .partner--bank .partner__footer {
     background: #c9992b;
+    color: white; }
+
+.partner--bdc {
+  border: 3px solid #de202a; }
+  .partner--bdc .partner__header,
+  .partner--bdc .partner__footer {
+    background: #de202a;
+    color: white; }
+
+.partner--oneeleven {
+  border: 3px solid #f1592b; }
+  .partner--oneeleven .partner__header,
+  .partner--oneeleven .partner__footer {
+    background: #f1592b;
     color: white; }
 
 @media (max-width: 992px) {

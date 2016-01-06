@@ -823,6 +823,7 @@ hr {
 	border-radius: 4px;
 	width: 75%;
 	margin: 2em auto;
+	background: rgb(255,255,255);
 }
 
 
@@ -1021,6 +1022,30 @@ hr {
 	.partner__header,
 	.partner__footer {
 		background: rgb(201,153,43);
+		color: rgb(255,255,255);
+	}
+
+}
+
+
+.partner--bdc {
+	border: 3px solid rgb(222,32,42);
+
+	.partner__header,
+	.partner__footer {
+		background: rgb(222,32,42);
+		color: rgb(255,255,255);
+	}
+
+}
+
+
+.partner--oneeleven {
+	border: 3px solid rgb(241,89,43);
+
+	.partner__header,
+	.partner__footer {
+		background: rgb(241,89,43);
 		color: rgb(255,255,255);
 	}
 
