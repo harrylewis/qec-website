@@ -11,8 +11,4 @@ $(function() {
 				.toggleClass('navigation__link__container--is-visible');
 	});
 
-	function mobileNav(target) {
-		alert('')
-	}
-
 });

@@ -235,10 +235,17 @@ hr {
   margin-top: 3em; }
 
 .row--top-40 {
-  margin-top: 5em; }
+  padding: 2.5em 0; }
 
 .row--masthead {
   padding: 12em 0 12em 0; }
+
+.sponsor__header {
+  text-align: center;
+  font: 700 1.6em/30px "Raleway";
+  color: #afafaf;
+  text-align: center;
+  text-transform: uppercase; }
 
 .row--row--masthead {
   padding: 16em 0 10em 0; }
@@ -705,6 +712,10 @@ hr {
   display: block;
   margin: 0 auto; }
 
+.partner__image--somen {
+  width: 106px;
+  border-radius: 8em; }
+
 .partner__header,
 .partner__footer {
   font: 500 1.4em "Raleway";
@@ -719,12 +730,26 @@ hr {
     background: #E5E4E2;
     color: #646e82; }
 
+.partner--clear {
+  border: 3px solid #008ad0; }
+  .partner--clear .partner__header,
+  .partner--clear .partner__footer {
+    background: #008ad0;
+    color: white; }
+
 .partner--gold {
   border: 3px solid #FFD700; }
   .partner--gold .partner__header,
   .partner--gold .partner__footer {
     background: #FFD700;
     color: #646e82; }
+
+.partner--somen {
+  border: 3px solid #2294F2; }
+  .partner--somen .partner__header,
+  .partner--somen .partner__footer {
+    background: #2294F2;
+    color: white; }
 
 .partner--silver {
   border: 3px solid #C0C0C0; }
@@ -752,6 +777,20 @@ hr {
   .partner--toronto .partner__header,
   .partner--toronto .partner__footer {
     background: #295a84;
+    color: white; }
+
+.partner--loyalty {
+  border: 3px solid #0072bb; }
+  .partner--loyalty .partner__header,
+  .partner--loyalty .partner__footer {
+    background: #0072bb;
+    color: white; }
+
+.partner--experience {
+  border: 3px solid #fca813; }
+  .partner--experience .partner__header,
+  .partner--experience .partner__footer {
+    background: #fca813;
     color: white; }
 
 .partner--redbull {
@@ -801,6 +840,13 @@ hr {
   .partner--covintus .partner__header,
   .partner--covintus .partner__footer {
     background: #1d4288;
+    color: white; }
+
+.partner--qic {
+  border: 3px solid #012a55; }
+  .partner--qic .partner__header,
+  .partner--qic .partner__footer {
+    background: #012a55;
     color: white; }
 
 .partner--awake {

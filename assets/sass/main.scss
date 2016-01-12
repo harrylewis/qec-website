@@ -85,12 +85,21 @@ hr {
 
 
 	.row--top-40 {
-		margin-top: 5em;
+		padding: 2.5em 0;
 	}
 
 
 	.row--masthead {
 		padding: 12em 0 12em 0;
+	}
+
+
+	.sponsor__header {
+		text-align: center;
+		font: $bold 1.6em/30px "Raleway";
+		color: rgb(175,175,175);
+		text-align: center;
+		text-transform: uppercase;
 	}
 
 
@@ -837,6 +846,12 @@ hr {
 			display: block;
 			margin: 0 auto;
 		}
+
+
+		.partner__image--somen {
+			width: 106px;
+			border-radius: 8em;
+		}
 	
 
 	.partner__header,
@@ -860,6 +875,18 @@ hr {
 }
 
 
+.partner--clear {
+	border: 3px solid rgb(0,138,208);
+
+	.partner__header,
+	.partner__footer {
+		background: rgb(0,138,208);
+		color: rgb(255,255,255);
+	}
+
+}
+
+
 .partner--gold {
 	border: 3px solid #FFD700;
 
@@ -867,6 +894,18 @@ hr {
 	.partner__footer {
 		background: #FFD700;
 		color: rgb(100,110,130);
+	}
+
+}
+
+
+.partner--somen {
+	border: 3px solid #2294F2;
+
+	.partner__header,
+	.partner__footer {
+		background: #2294F2;
+		color: rgb(255,255,255);
 	}
 
 }
@@ -914,6 +953,30 @@ hr {
 	.partner__header,
 	.partner__footer {
 		background: rgb(41,90,132);
+		color: rgb(255,255,255);
+	}
+
+}
+
+
+.partner--loyalty {
+	border: 3px solid rgb(0,114,187);
+
+	.partner__header,
+	.partner__footer {
+		background: rgb(0,114,187);
+		color: rgb(255,255,255);
+	}
+
+}
+
+
+.partner--experience {
+	border: 3px solid rgb(252,168,19);
+
+	.partner__header,
+	.partner__footer {
+		background: rgb(252,168,19);
 		color: rgb(255,255,255);
 	}
 
@@ -998,6 +1061,18 @@ hr {
 	.partner__header,
 	.partner__footer {
 		background: rgb(29,66,136);
+		color: rgb(255,255,255);
+	}
+
+}
+
+
+.partner--qic {
+	border: 3px solid rgb(1,42,85);
+
+	.partner__header,
+	.partner__footer {
+		background: rgb(1,42,85);
 		color: rgb(255,255,255);
 	}
 
